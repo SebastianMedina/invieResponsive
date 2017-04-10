@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"><!-- sirve para habilitar caracteres especiales del idioma español-->
+  <title>Invie - Precios</title>
+  <link rel="stylesheet" href="css/invie.css">
+  <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat:400,700" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+</head>
+  <body class="precios">
+    <header id="header" class="header background"> <!-- header -->
+      <div class="contenedor">
+        <figure class="logotipo"> <!-- logotipo -->
+          <img src="Images/invie.png" width="186" height="60" alt="Invie logotipo"/><!-- alt es el texto que se muestra en caso de que la imagen no cargue-->
+        </figure>
+        <span id="burger-button" class="burger-button icon-menu"></span>
+        <nav  id="menu" class="menu"> <!-- menu -->
+          <ul> <!-- lista desordenada -->
+            <li> <!-- list item -->
+              <a href="index.html">Home</a>
+            </li>
+            <li> <!-- list item -->
+              <a href="index.html#guitarras">Guitarras</a>
+            </li>
+            <li> <!-- list item -->
+              <a href="precios.html">Precios</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="tabla">
+      <div class="contenedor">
+        <table>
+          <thead>
+            <tr>
+              <th>Modelo</th>
+              <th>Precio</th>
+              <th>Descripción</th>
+              <th>Modelo</th>
+              <th>Precio</th>
+              <th>Descripción</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Invie classic</td>
+              <td>$100.000</td>
+              <td>Una guitarra muy pro</td>
+              <td>Invie classic</td>
+              <td>$100.000</td>
+              <td>Una guitarra muy pro</td>
+            </tr>
+            <tr>
+              <td>Invie classic</td>
+              <td>$100.000</td>
+              <td>Una guitarra muy pro</td>
+              <td>Invie classic</td>
+              <td>$100.000</td>
+              <td>Una guitarra muy pro</td>
+            </tr>
+            <tr>
+              <td>Invie classic</td>
+              <td>$100.000</td>
+              <td>Una guitarra muy pro</td>
+              <td>Invie classic</td>
+              <td>$100.000</td>
+              <td>Una guitarra muy pro</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="contenedor">
+        <div class="contacto">
+          <img src="Images/invie-white.png" alt="logotipo blanco"/>
+          <a href="tel:+573015634361"><strong>Telefono</strong><span>3105634361</span></a>
+          <a href="mailto:contacto@invie.com"><strong>E-mail</strong><span>contacto@invie.com</span></a>
+        </div>
+        <form class="formulario">
+          <div class="col1">
+            <label for="nombre">Nombre</label>
+            <input type="text" required id="nombre" name="nombre"/>
+            <label for="email">E-mail</label>
+            <input type="email" required id="email" name="email"/>
+            <div class="sexo">
+              <label for="mujer">
+                <input type="radio" checked id="mujer" name="sexo" value="mujer"/> mujer
+              </label>
+              <label for="hombre">
+                <input type="radio" id="hombre" name="sexo" value="hombre"/> hombre
+              </label>
+            </div>
+            <div class="intereses">
+              <label for="cotizacion">
+                <input type="checkbox" checked id="cotizacion" name="intereses" value="cotizacion"/> Cotización
+              </label>
+              <label for="reclamos">
+                <input type="checkbox" id="reclamos" name="intereses" value="reclamos"/> Reclamos
+              </label>
+              <label for="comentarios">
+                <input type="checkbox" id="comentarios" name="intereses" value="comentarios"/> comentarios
+              </label>
+              <label for="otrs">
+                <input type="checkbox" id="otros" name="intereses" value="otros"/> otros
+              </label>
+            </div>
+          </div>
+          <div class="col2">
+            <label for="comentaris">Comentarios</label>
+            <textarea name="name" id="comentarios" rows="7" cols="30"></textarea>
+            <input class="button" type="submit" value="Enviar"/>
+          </div>
+        </form>
+      </div>
+    </footer>
+
+    <!-- FUNCIONALIDAD DEL BOTON DE MENU PARA PANTALLAS PEQUEÑAS -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js" charset="utf-8"></script>
+    <script>
+      var consulta = window.matchMedia('(max-width: 500px)');
+      consulta.addListener(mediaQuery);
+      var $burgerButton = document.getElementById('burger-button');
+      var $menu = document.getElementById('menu');
+
+      function tooglemenu(){
+        $menu.classList.toggle('active');
+      };
+
+      function mediaQuery (){
+        if (consulta.matches) {
+          console.log('se cumplio la condición.');
+          $burgerButton.addEventListener('touchstart', tooglemenu);
+        } else {
+          console.log('no se cumplio la condición');
+          $burgerButton.removeEventListener('touchstart', tooglemenu);
+        }
+      }
+      mediaQuery();
+      var bLazy = new Blazy({
+        selector:'img'
+      });
+    </script>
+  </body>
+</html>
