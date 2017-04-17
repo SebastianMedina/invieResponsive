@@ -4,7 +4,7 @@
     <title>Invie - Tus mejores guitarras!!</title>
     <meta charset="utf-8"><!-- sirve para habilitar caracteres especiales del idioma español-->
     <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="invie.css">
+    <link rel="stylesheet" href="CSS/invie.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
     <!-- <link rel="stylesheet" media="(max-width: 800px)" href="css/media-query.css"> -->
   </head>
@@ -134,10 +134,8 @@
 
       function mediaQuery (){
         if (consulta.matches) {
-          console.log('se cumplio la condición.');
           $burgerButton.addEventListener('touchstart', showMenu);
         } else {
-          console.log('no se cumplio la condición');
           $burgerButton.removeEventListener('touchstart', hideMenu);
         }
       }
