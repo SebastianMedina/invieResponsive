@@ -134,10 +134,8 @@
 
       function mediaQuery (){
         if (consulta.matches) {
-          console.log('se cumplio la condición.');
           $burgerButton.addEventListener('touchstart', showMenu);
         } else {
-          console.log('no se cumplio la condición');
           $burgerButton.removeEventListener('touchstart', hideMenu);
         }
       }
