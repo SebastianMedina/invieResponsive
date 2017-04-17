@@ -3,19 +3,12 @@
   <head>
     <title>Invie - Tus mejores guitarras!!</title>
     <meta charset="utf-8"><!-- sirve para habilitar caracteres especiales del idioma español-->
-<<<<<<< HEAD
-    <!-- <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat:400,700" rel="stylesheet"> -->
-=======
     <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat:400,700" rel="stylesheet">
     <link rel="stylesheet" href="CSS/invie.css">
->>>>>>> ad915d04a1fc5c0b6995287a9cffc4e36c500193
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
     <!-- <link rel="stylesheet" media="(max-width: 800px)" href="css/media-query.css"> -->
-    <style>
-      @font-face{font-family:'icomoon';src:url(./fonts/icomoon.eot?fswiss);src:url(./fonts/icomoon.eot?fswiss#iefix) format("embedded-opentype"),url(./fonts/icomoon.ttf?fswiss)format("truetype"),url(./fonts/icomoon.woff?fswiss)format("woff"),url(./fonts/icomoon.svg?fswiss#icomoon)format("svg");font-weight:400;font-style:normal}[class*="icon-"]{font-family:'icomoon'!important;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-menu:before{content:"\e9bd"}body{font-family:'Allerta',sans-serif;margin:0}.contenedor{max-width:800px;margin:auto;position:relative}.background{background-color:#1F313C;background-image:url(./Images/background.png);background-size:cover}.button{margin-top:10px;border-radius:12px;border:none;background:#FF6A50;color:#fff;padding:7px 12px;font-size:18px;background:linear-gradient(to left,#FF3B4E,#FF674F);text-decoration:none}.titulo{font-size:70px;font-family:'Montserrat',sans-serif;margin-bottom:0;margin-top:70px}.titulo span{text-decoration:underline}.title-a{font-size:24px;margin-top:0}.guitarras{color:#1F313C;margin-bottom:60px}.guitarras h2{font-size:35px;font-family:'Montserrat',sans-serif}.video{position:relative;padding-top:56.25%}.video-src{position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%}.portada{color:#fff;padding:10px;height:500px}.menu{font-size:24px;display:inline-block;position:absolute;right:0}.menu a{color:#fff;text-decoration:none}.menu li{display:inline-block;margin-left:30px}.menu li:before{content:'·';color:#fff}.logotipo{display:inline-block;margin-left:0}.right{float:right;position:relative;top:-127px}.header{position:relative}.burger-button{background:#395667;display:none;width:40px;border-radius:50%;line-height:40px;height:40px;text-align:center;position:fixed;top:20px;left:20px;z-index:3;color:#fff;border:1px solid #fff;top:13px}.video-demo-contenedor{display:flex;justify-content:center;margin-bottom:80px}.video-demo{max-width:500px;width:100%;border:5px solid #1F313C}@media screen and (max-width: 800px){.titulo{font-size:50px;margin-top:30px}.title-a{font-size:18px}.portada{height:auto}.portada .button{margin-bottom:30px;display:inline-block}.video-demo-contenedor{margin-bottom:30px}.guitarras{text-align:center}.right{float:none;position:static}}@media screen and (max-width: 650px){.portada{text-align:center}.logotipo{margin:0}.menu{position:static;display:block}.menu li:first-child{margin:0}.menu ul{padding:0}}@media screen and (max-width: 500px){.portada .button{display:block}.burger-button{display:block}.portada .contenedor{position:static}.header{position:static;text-align:center}.menu{background:rgba(255,60,88,0.7);position:fixed;width:100%;top:0;right:0;bottom:0;left:-100%;z-index:2;display:flex;align-items:center}.menu ul{flex:1}.menu li{display:block;margin:0;padding:8px 0;border-bottom:1px solid #FFF}.menu li:before{display:none}.menu li:first-child{border-top:1px solid #FFF}.titulo{font-size:30px;margin:0}.title-a{font-size:15px}.guitarra img{width:200px}.video-demo-contenedor{margin:0 10px}}@media screen and (-webkit-min-device-pixel-ratio: 2){.background{background-image:url(./Images/background2x.png)}}
-    </style>
   </head>
-    <body>
+  <body>
     <section id="portada" class="portada background">      <!-- portada -->
       <header id="header" class="header contenedor"> <!-- header -->
       <figure class="logotipo"> <!-- logotipo -->
@@ -118,16 +111,9 @@
         </form>
       </div>
     </footer>
-    <!-- AGREGANDO FUENTES DE GOOGLE CON JAVASCRIPT  -->
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
-    <script>
-     WebFont.load({
-       google: {
-         families: ['Montserrat', 'Allerta']
-       }
-     });
-    </script>
+
     <!-- FUNCIONALIDAD DEL BOTON DE MENU PARA PANTALLAS PEQUEÑAS -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js" charset="utf-8"></script>
     <script>
@@ -163,8 +149,7 @@
 
       var gestos = new Hammer($body);
       gestos.on('swiperight', showMenu);
-      gestos.on('swipeleft', hideMenu);
+      gestos.on('swipeleft',hideMenu);
     </script>
-    <link rel="stylesheet" href="CSS/invie.css">
   </body>
 </html>
